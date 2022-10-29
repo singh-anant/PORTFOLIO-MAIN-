@@ -208,7 +208,6 @@ nav .fa-solid {
   align-items: center;
   justify-content: flex-start;
   color: #fff;
-  /* background-color: aqua; */
 }
 
 .skill-container {
@@ -430,13 +429,13 @@ nav .fa-solid {
   font-size: 40px;
 }
 .moreabout-head h2 span {
-  color: rgba(129, 22, 136, 0.97);
+  color: rgb(166, 26, 176);
 }
 .moreabout-head p {
   font-size: 35px;
 }
 .moreabout-head p span {
-  color: rgba(129, 22, 136, 0.97);
+  color: rgb(139, 22, 147);
   font-weight: 700;
 }
 .coding-container {
@@ -482,7 +481,7 @@ nav .fa-solid {
     width: 100%;
   }
   .coding-container img {
-    height: 12rem;
+    height: 17rem;
     width: 100%;
   }
   .coding-container a {
@@ -532,6 +531,13 @@ nav .fa-solid {
   position: relative;
   cursor: pointer;
   text-align: center;
+}
+.pro-inner h3:hover {
+  color: #fff;
+  transition: 0.5 ease-in-out;
+}
+.pro-inner h3:hover {
+  color: rgba(129, 22, 136, 0.97);
 }
 
 .box-1 {
