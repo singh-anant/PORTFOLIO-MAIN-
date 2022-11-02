@@ -542,12 +542,12 @@ nav .fa-solid {
 
 .box-1 {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(/images/pro1.png) center center no-repeat;
+    url(/images/Pro/TodoList.png) center center no-repeat;
   background-size: 450px;
 }
 .box-1:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(/images/pro1.png) left center no-repeat;
+    url(/images/Pro/TodoList.png) left center no-repeat;
   background-size: 450px;
 }
 .box-2 {
@@ -582,12 +582,12 @@ nav .fa-solid {
 }
 .box-5 {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(/images/pro1.png) center center no-repeat;
+    url(/images/Pro/temp.png) center center no-repeat;
   background-size: 450px;
 }
 .box-5:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(/images/pro1.png) left center no-repeat;
+    url(/images/Pro/temp.png) left center no-repeat;
   background-size: 450px;
 }
 .box-6 {
