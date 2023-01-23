@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -11,15 +12,15 @@ body {
   transition: 0.3s ease;
 }
 .header {
-  min-height: 100vh;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.451);
   position: relative;
 }
+
 /* -------------------------------------------- */
 /* NavBar */
 .container-1 {
-  height: 100vh;
+  height: 30vh;
   width: 100%;
   position: relative;
   padding-top: 2rem;
@@ -114,7 +115,6 @@ nav ul li a:hover {
 
   .fa-times {
     opacity: 1;
-    /* width: 25px; */
     font-weight: light;
     font-size: 30px;
     position: absolute;
@@ -136,94 +136,110 @@ nav ul li a:hover {
     top: 45px;
   }
 }
+
+/* Commom Heading */
+.common-heading {
+  font-size: 4.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+  position: relative;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  border-bottom: 5px solid rgb(168, 20, 194);
+}
+
 /* -------------------------------------------- */
 
-/* Home--Section */
-.intro-container {
-  margin: 150px auto;
+.about-container {
+  margin: 30px auto;
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  /* border: 3px solid green; */
 }
-.dev-info {
+.about-info {
   display: flex;
-  justify-content: center;
+  margin-left: 9rem;
+  /* width: 40px; */
+  /* justify-content: end; */
   flex-direction: column;
   line-height: 70px;
+  margin-top: 3rem;
+  /* border: 3px solid red; */
 }
 
 .title {
   font-size: 65px;
   color: #fff;
   color: #000;
-  font-weight: 600;
+  border-bottom: 5px solid rgb(168, 20, 194);
+}
+.title span {
+  font-weight: 900;
+  color: rgb(168, 20, 194);
 }
 .name {
   font-size: 80px;
-  font-weight: 800;
+  font-weight: 500;
   color: #fff;
   color: #000;
 }
 .about-para {
-  font-size: 44px;
+  font-size: 40px;
   color: #fff;
   color: #000;
-  font-weight: 600;
+  /* border: 3px solid hotpink; */
   line-height: 50px;
 }
+.about-para span {
+  font-weight: 900;
+  color: rgb(168, 20, 194);
+}
 .profile-pic img {
-  width: 340px;
-  height: 360px;
+  width: 400px;
+  height: 500px;
   border-radius: 20px;
   cursor: pointer;
   transition: 0.5s ease-in-out;
+  /* border: 3px solid firebrick; */
+  margin-left: 2rem;
 }
 .profile-pic img:hover {
-  transform: rotate(5deg);
+  transform: translateY(-2px);
+  /* transform: rotate(5deg); */
   box-shadow: rgba(137, 12, 153, 0.71) 0px 2px 20px 0px,
     rgba(125, 14, 153, 0.823) 0px 2px 20px 0px;
 }
-.cv-btn {
-  margin-top: 34px;
-  padding: 12px;
-  color: rgba(255, 255, 255, 0.968);
-  border: none;
-  background-color: rgb(168, 20, 194);
-  font-weight: 600;
-  font-size: 21px;
-  margin: 20px 2px;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: 0.5s ease-in-out;
-}
-.cv-btn a {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.968);
-}
-.cv-btn:hover {
-  background-color: rgb(117, 6, 137);
-  color: white;
-}
 
 @media (max-width: 1096px) {
-  .intro-container {
+  .about-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 0;
   }
-  .dev-info {
+  .title {
+    font-size: 45px;
+  }
+  .about-info {
     justify-content: center;
     align-items: center;
+    /* border: 3px solid green; */
+    margin: 0;
   }
-  .header {
-    min-height: 110vh;
-  }
+
   .about-para {
-    font-size: 30px;
+    font-size: 20px;
+    /* border: 3px solid green; */
+    /* margin-left: em; */
+    line-height: 40px;
   }
   .name {
     font-size: 70px;
   }
 }
+
 footer {
   height: 10vh;
   width: 100%;

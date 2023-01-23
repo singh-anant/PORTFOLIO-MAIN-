@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -11,15 +12,15 @@ body {
   transition: 0.3s ease;
 }
 .header {
-  min-height: 100vh;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.451);
   position: relative;
 }
+
 /* -------------------------------------------- */
 /* NavBar */
 .container-1 {
-  height: 100vh;
+  height: 30vh;
   width: 100%;
   position: relative;
   padding-top: 2rem;
@@ -114,7 +115,6 @@ nav ul li a:hover {
 
   .fa-times {
     opacity: 1;
-    /* width: 25px; */
     font-weight: light;
     font-size: 30px;
     position: absolute;
@@ -136,92 +136,115 @@ nav ul li a:hover {
     top: 45px;
   }
 }
-/* -------------------------------------------- */
 
-/* Home--Section */
-.intro-container {
-  margin: 150px auto;
-  display: flex;
-  justify-content: space-around;
-}
-.dev-info {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  line-height: 70px;
+/* Commom Heading */
+.common-heading {
+  font-size: 4.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+  position: relative;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  border-bottom: 5px solid rgb(168, 20, 194);
 }
 
-.title {
-  font-size: 65px;
-  color: #fff;
-  color: #000;
-  font-weight: 600;
+.contact-box {
+  display: flex;
+  /* border: 2px solid rgb(168, 20, 194); */
 }
-.name {
-  font-size: 80px;
-  font-weight: 800;
-  color: #fff;
-  color: #000;
+
+.contact-left {
+  flex-basis: 60%;
+  padding: 40px 60px;
 }
-.about-para {
-  font-size: 44px;
-  color: #fff;
-  color: #000;
-  font-weight: 600;
-  line-height: 50px;
-}
-.profile-pic img {
-  width: 340px;
-  height: 360px;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: 0.5s ease-in-out;
-}
-.profile-pic img:hover {
-  transform: rotate(5deg);
-  box-shadow: rgba(137, 12, 153, 0.71) 0px 2px 20px 0px,
-    rgba(125, 14, 153, 0.823) 0px 2px 20px 0px;
-}
-.cv-btn {
-  margin-top: 34px;
-  padding: 12px;
-  color: rgba(255, 255, 255, 0.968);
-  border: none;
-  background-color: rgb(168, 20, 194);
-  font-weight: 600;
-  font-size: 21px;
-  margin: 20px 2px;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: 0.5s ease-in-out;
-}
-.cv-btn a {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.968);
-}
-.cv-btn:hover {
-  background-color: rgb(117, 6, 137);
+
+.contact-right {
+  flex-basis: 60%;
+  padding: 40px 60px;
+  background: rgb(168, 20, 194);
   color: white;
 }
 
-@media (max-width: 1096px) {
-  .intro-container {
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  flex-basis: 45%;
+}
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  font-size: 20px;
+  font-weight: 400;
+}
+textarea {
+  width: 100%;
+  border: 1px solid black;
+  outline: none;
+  padding: 13px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 400;
+}
+label {
+  margin-bottom: 6px;
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+button {
+  background: rgb(168, 20, 194);
+  width: 100px;
+  border: none;
+  color: white;
+  height: 35px;
+  border-radius: 30px;
+  margin-top: 20px;
+  transition: 0.7s;
+}
+button:hover {
+  background: rgb(107, 16, 123);
+  font-weight: 600;
+  transform: translateY(-5px);
+}
+.contact-left h3 {
+  color: rgb(168, 20, 194);
+  font-weight: 800;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+.contact-right h3 {
+  color: white;
+  font-weight: 800;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+tr td:first-child {
+  padding-right: 20px;
+  font-size: 30px;
+}
+tr td {
+  padding-top: 20px;
+}
+
+tr td a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+@media only screen and (max-width: 728px) {
+  .contact-box {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .dev-info {
-    justify-content: center;
-    align-items: center;
-  }
-  .header {
-    min-height: 110vh;
-  }
-  .about-para {
-    font-size: 30px;
-  }
-  .name {
-    font-size: 70px;
+    margin-top: 50px;
   }
 }
 footer {
