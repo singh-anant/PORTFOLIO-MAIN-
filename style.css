@@ -18,6 +18,11 @@ body {
 }
 /* -------------------------------------------- */
 /* NavBar */
+/* .navbar {
+  justify-content: space-around;
+  padding: auto;
+} */
+
 .container-1 {
   height: 100vh;
   width: 100%;
@@ -56,14 +61,10 @@ nav ul li a:hover {
 
 .logo a {
   text-decoration: none;
-  padding-top: 0;
   font-size: 40px;
   color: #000;
-  transition: 0.8s ease-in-out;
 }
-.logo a:hover {
-  transform: translateY(-13px);
-}
+
 @media only screen and (max-width: 728px) {
   nav {
     position: absolute;
