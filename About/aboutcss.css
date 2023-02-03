@@ -309,19 +309,14 @@ li {
   line-height: 1.5;
 }
 
-/* @media screen and (min-width: 992px) {
+@media screen and (max-width: 996px) {
   .about-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    flex-direction: column;
   }
   .about-left {
-    position: relative;
+    margin-bottom: 2rem;
   }
-  .about-left-content {
-    position: absolute;
-    right: -20px;
-  }
-} */
+}
 footer {
   height: 10vh;
   width: 100%;
